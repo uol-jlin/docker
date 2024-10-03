@@ -11,3 +11,7 @@ RUN python app.py
 ```
 
 In this case, all commands after `WORKDIR /app` will be executed in the `/app` directory.
+
+* `WORKDIR /app`: Sets `/app` as the working directory for all following commands.
+* `COPY . .`: Copies the current directory's contents (from the **host**) into the `/app` directory in the container.
+* `RUN python app.py`: Runs the `app.py` file from the `/app` directory.
